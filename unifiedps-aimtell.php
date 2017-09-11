@@ -28,6 +28,6 @@ defined( 'ABSPATH' ) or die( 'No access allowed' );
  * Enequeue script
  */
 function unifiedps_aimtell_tracking() {
-    wp_register_script( 'unifiedps-aimtell', plugin_dir_url( __FILE__ ) . 'unifiedps-aimtell.js', array(), '1.0' );
+    wp_enqueue_script( 'unifiedps-aimtell', plugin_dir_url( __FILE__ ) . 'unifiedps-aimtell.js', array(), '1.0' );
 }
 add_action( 'wp_enqueue_scripts', 'unifiedps_aimtell_tracking' );
