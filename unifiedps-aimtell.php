@@ -3,7 +3,7 @@
  * Plugin Name: UnifiedPS.com AimTell Tracking
  * Plugin URI: https://github.com/Pressed-Solutions/UnifiedPS-aimtell
  * Description: Makes the documentation sidebar stay within the viewport when user scrolls the page
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Pressed Solutions
  * Author URI: https://pressedsolutions.com
  * Copyright: 2017 Pressed Solutions
@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) or die( 'No access allowed' );
  * Enequeue script
  */
 function unifiedps_aimtell_tracking() {
-    wp_enqueue_script( 'unifiedps-aimtell-worker-sdk', 'https://cdn.aimtell.com/sdk/aimtell-worker-sdk.js', array( '2.31' ) );
-    wp_enqueue_script( 'unifiedps-aimtell', plugin_dir_url( __FILE__ ) . 'unifiedps-aimtell.js', array( 'unifiedps-aimtell-worker-sdk' ), '1.1' );
+    wp_enqueue_script( 'unifiedps-aimtell-worker-sdk', 'https://cdn.aimtell.com/sdk/aimtell-worker-sdk.js' );
+    wp_enqueue_script( 'unifiedps-aimtell', plugin_dir_url( __FILE__ ) . 'unifiedps-aimtell.js', array(), '1.1.1' );
 }
 add_action( 'wp_enqueue_scripts', 'unifiedps_aimtell_tracking' );
