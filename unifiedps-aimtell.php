@@ -2,7 +2,7 @@
 /**
  * Plugin Name: UnifiedPS.com AimTell Tracking
  * Plugin URI: https://github.com/Pressed-Solutions/UnifiedPS-aimtell
- * Description: Makes the documentation sidebar stay within the viewport when user scrolls the page
+ * Description: Adds AimTell scripts
  * Version: 1.1.1
  * Author: Pressed Solutions
  * Author URI: https://pressedsolutions.com
